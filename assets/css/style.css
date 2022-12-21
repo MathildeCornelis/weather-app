@@ -1,1 +1,25 @@
-/*# sourceMappingURL=style.css.map */
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+body #titre #city #submit #day {
+  width: 100vw;
+  background-color: rgb(237, 40, 40);
+}
+body #titre #city #submit #day #one {
+  background-color: aqua;
+}
+body #titre #city #submit #day #two {
+  background-color: azure;
+}
+body #titre #city #submit #day #three {
+  background-color: aqua;
+}
+body #titre #city #submit #day #four {
+  background-color: aqua;
+}
+body #titre #city #submit #day #five {
+  background-color: aqua;
+}/*# sourceMappingURL=style.css.map */
