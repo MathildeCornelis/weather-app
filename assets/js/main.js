@@ -21,13 +21,13 @@ async function catchData() {
         nameCity.textContent = stock.city.name;
         
         let tempGen = document.getElementsByClassName('tempGen')[0];
-        tempGen.textContent = stock.list[0].main.temp;
+        tempGen.textContent = moyenne() + '°C';
     
         let tempMin = document.getElementsByClassName('tempMin')[0];
-        tempMin.textContent = stock.list[0].main.temp_min;
+        tempMin.textContent = Math.round(stock.list[0].main.temp_min) + '°C';
     
         let tempMax = document.getElementsByClassName('tempMax')[0];
-        tempMax.textContent = stock.list[0].main.temp_max;
+        tempMax.textContent = Math.round(stock.list[0].main.temp_max) + '°C';
     
         let desc = document.getElementsByClassName('desc')[0];
         desc.textContent = stock.list[0].weather[0].description;
@@ -38,18 +38,25 @@ async function catchData() {
     createCarte();
 
     //faire la moyenne des t°
-    let tempActuel = 
-    function moyenneTemp(a) {
-        let b = a.length,
-            c = 0, i;
-        for (i = 0; i < b; i++) {
-            c += Number(a[i]);
-        };
-        return c/b;
-    }
+    function moyenne() {
+        let somme = 0;
+        let total = 0;
 
-    moyenneTemp([5, 1, 1, 1, 5]);
-    console.log(moyenneTemp([5, 1, 1, 1, 5]));
+        for (let i = 0; i < stock.list.length; i++) {
+            let temperatures = stock.list[i].main.temp;
+
+            somme += temperatures;
+
+            total++;
+        }
+
+        let moyenne = Math.round(somme / total);
+
+        return moyenne;
+    }
+    
+
+
 
     // function createSecondCarte() {
 
