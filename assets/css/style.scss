@@ -68,14 +68,45 @@ body{
             color: white;
             text-align: center;
             @include desktop{
-                width:30%;
-                margin-top: 0;
+                width:40%;
+                margin-top: 5%;
             }
             .name{
                 font-size: 150%;
+                @include desktop {
+                    font-size: 300%;
+                }
+            }
+            .date{
+                @include desktop {
+                    font-size: 350%;
+                }
             }
             .tempGen{
                 font-size: 200%;
+                @include desktop {
+                    font-size: 300%;
+                }
+            }
+            .tempMin{
+                @include desktop{ 
+                    font-size: 150%;
+                }
+            }
+            .tempMax{
+                @include desktop{ 
+                    font-size: 150%;
+                }
+            }
+            .desc{
+                @include desktop{
+                    font-size: 150%;
+                }
+            }
+            .icon{
+                @include desktop{
+                    width: 40%;
+                }
             }
         }
         #two{
@@ -90,14 +121,45 @@ body{
             color: white;
             text-align: center;
             @include desktop{
-                width: 30%;
-                margin-top: 0;
+                width:40%;
+                margin-top: 5%;
             }
             .name{
                 font-size: 150%;
+                @include desktop {
+                    font-size: 300%;
+                }
+            }
+            .date{
+                @include desktop {
+                    font-size: 350%;
+                }
             }
             .tempGen{
                 font-size: 200%;
+                @include desktop {
+                    font-size: 300%;
+                }
+            }
+            .tempMin{
+                @include desktop{ 
+                    font-size: 150%;
+                }
+            }
+            .tempMax{
+                @include desktop{ 
+                    font-size: 150%;
+                }
+            }
+            .desc{
+                @include desktop{
+                    font-size: 150%;
+                }
+            }
+            .icon{
+                @include desktop{
+                    width: 40%;
+                }
             }
         }
         #three{
@@ -112,14 +174,45 @@ body{
             color: white;
             text-align: center;
             @include desktop{
-                width: 30%;
-                margin-top: 0;
+                width:40%;
+                margin-top: 5%;
             }
             .name{
                 font-size: 150%;
+                @include desktop {
+                    font-size: 300%;
+                }
+            }
+            .date{
+                @include desktop {
+                    font-size: 350%;
+                }
             }
             .tempGen{
                 font-size: 200%;
+                @include desktop {
+                    font-size: 300%;
+                }
+            }
+            .tempMin{
+                @include desktop{ 
+                    font-size: 150%;
+                }
+            }
+            .tempMax{
+                @include desktop{ 
+                    font-size: 150%;
+                }
+            }
+            .desc{
+                @include desktop{
+                    font-size: 150%;
+                }
+            }
+            .icon{
+                @include desktop{
+                    width: 40%;
+                }
             }
         }
         #four{
@@ -134,15 +227,45 @@ body{
             color: white;
             text-align: center;
             @include desktop{
-                width: 30%;
+                width:40%;
                 margin-top: 5%;
-                margin-left: 16%;
             }
             .name{
                 font-size: 150%;
+                @include desktop {
+                    font-size: 300%;
+                }
+            }
+            .date{
+                @include desktop {
+                    font-size: 350%;
+                }
             }
             .tempGen{
                 font-size: 200%;
+                @include desktop {
+                    font-size: 300%;
+                }
+            }
+            .tempMin{
+                @include desktop{ 
+                    font-size: 150%;
+                }
+            }
+            .tempMax{
+                @include desktop{ 
+                    font-size: 150%;
+                }
+            }
+            .desc{
+                @include desktop{
+                    font-size: 150%;
+                }
+            }
+            .icon{
+                @include desktop{
+                    width: 40%;
+                }
             }
         }
         #five{
@@ -158,15 +281,45 @@ body{
             text-align: center;
             margin-bottom: 5%;
             @include desktop{
-                width: 30%;
+                width:40%;
                 margin-top: 5%;
-                margin-right: 16%;
             }
             .name{
                 font-size: 150%;
+                @include desktop {
+                    font-size: 300%;
+                }
+            }
+            .date{
+                @include desktop {
+                    font-size: 350%;
+                }
             }
             .tempGen{
                 font-size: 200%;
+                @include desktop {
+                    font-size: 300%;
+                }
+            }
+            .tempMin{
+                @include desktop{ 
+                    font-size: 150%;
+                }
+            }
+            .tempMax{
+                @include desktop{ 
+                    font-size: 150%;
+                }
+            }
+            .desc{
+                @include desktop{
+                    font-size: 150%;
+                }
+            }
+            .icon{
+                @include desktop{
+                    width: 40%;
+                }
             }
         }
     }
