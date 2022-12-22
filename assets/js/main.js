@@ -1,13 +1,19 @@
 async function catchData() {
-    let tmp = JSON.parse(localStorage.getItem("response"));
-    // const response = await fetch(
-    //     'https://api.openweathermap.org/data/2.5/forecast?q=London&appid=4e29ee50eda3d88e1433f23cf8536aa4&units=metric&lang=fr',
-    //     {
-    //         method: 'GET'
-    //     }
-    // );
-    // let stock = await response.json();
-    let stock = tmp;
+     //recupérer le nom entré 
+    let input = document.getElementById('city');
+    let inputValue = input.value;
+    console.log(inputValue);
+
+     //faire une recherche par rapport au nom
+    let city = inputValue;
+
+    
+    // let tmp = JSON.parse(localStorage.getItem("response"));
+    const response = await fetch(
+        `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=4e29ee50eda3d88e1433f23cf8536aa4&units=metric&lang=fr`
+    );
+    let stock = await response.json();
+    // let stock = tmp;
     console.log(stock);
     localStorage.setItem('response', JSON.stringify(stock));
     
@@ -165,16 +171,17 @@ async function catchData() {
         icon.src = "http://openweathermap.org/img/wn/" + stock.list[32].weather[0].icon + "@2x.png";
     }
     createFifthCarte();
-
-    //recupérer le nom entré 
-    let input = document.getElementById('city');
-    let inputValue = input.value;
-    console.log(inputValue);
-
-    //faire une recherche par rapport au nom
-    let villeInput = (stock.city.name === inputValue)
-
 };
 
-document.getElementById('submit').addEventListener('click', function(){catchData()})
+document.getElementById('submit').addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+        catchData();
+    }
+    else {
+        console.log('erreur');
+    }
+    
+});
+
+document.getElementById('submit').addEventListener('click', function(){catchData()});
 
