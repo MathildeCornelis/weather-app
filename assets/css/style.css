@@ -1,25 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap");
 body {
   width: 100vw;
   height: 100vh;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Hanken Grotesk", sans-serif;
+  background: linear-gradient(180deg, rgb(2, 0, 36) 0%, rgb(25, 25, 149) 33%, rgb(105, 213, 235) 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
-body #titre #city #submit #day {
-  width: 100vw;
-  background-color: rgb(237, 40, 40);
+body #titre {
+  color: white;
 }
-body #titre #city #submit #day #one {
-  background-color: aqua;
+@media screen and (min-width: 1024px) {
+  body #titre {
+    font-size: 350%;
+  }
 }
-body #titre #city #submit #day #two {
-  background-color: azure;
+body #city {
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(246, 246, 246);
+  padding: 1%;
+  margin-bottom: 5%;
 }
-body #titre #city #submit #day #three {
-  background-color: aqua;
+@media screen and (min-width: 1024px) {
+  body #city {
+    width: 50%;
+    font-size: 100%;
+  }
 }
-body #titre #city #submit #day #four {
-  background-color: aqua;
+body #submit {
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(246, 246, 246);
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 3%;
+  padding-right: 3%;
+  margin-bottom: 10%;
 }
-body #titre #city #submit #day #five {
-  background-color: aqua;
+@media screen and (min-width: 1024px) {
+  body #submit {
+    width: 20%;
+    font-size: 100%;
+    font-weight: 700;
+  }
+}
+body #day {
+  display: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 1024px) {
+  body #day {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+}
+body #day #one {
+  display: none;
+  width: 70%;
+  background: rgba(255, 255, 255, 0.24);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(4.8px);
+          backdrop-filter: blur(4.8px);
+  border: none;
+  color: white;
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  body #day #one {
+    width: 30%;
+    margin-top: 0;
+  }
+}
+body #day #one .name {
+  font-size: 150%;
+}
+body #day #one .tempGen {
+  font-size: 200%;
+}
+body #day #two {
+  display: none;
+  margin-top: 5%;
+  width: 70%;
+  background: rgba(255, 255, 255, 0.24);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(4.8px);
+          backdrop-filter: blur(4.8px);
+  border: none;
+  color: white;
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  body #day #two {
+    width: 30%;
+    margin-top: 0;
+  }
+}
+body #day #two .name {
+  font-size: 150%;
+}
+body #day #two .tempGen {
+  font-size: 200%;
+}
+body #day #three {
+  display: none;
+  margin-top: 5%;
+  width: 70%;
+  background: rgba(255, 255, 255, 0.24);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(4.8px);
+          backdrop-filter: blur(4.8px);
+  border: none;
+  color: white;
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  body #day #three {
+    width: 30%;
+    margin-top: 0;
+  }
+}
+body #day #three .name {
+  font-size: 150%;
+}
+body #day #three .tempGen {
+  font-size: 200%;
+}
+body #day #four {
+  display: none;
+  margin-top: 5%;
+  width: 70%;
+  background: rgba(255, 255, 255, 0.24);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(4.8px);
+          backdrop-filter: blur(4.8px);
+  border: none;
+  color: white;
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  body #day #four {
+    width: 30%;
+    margin-top: 5%;
+    margin-left: 16%;
+  }
+}
+body #day #four .name {
+  font-size: 150%;
+}
+body #day #four .tempGen {
+  font-size: 200%;
+}
+body #day #five {
+  display: none;
+  margin-top: 5%;
+  width: 70%;
+  background: rgba(255, 255, 255, 0.24);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(4.8px);
+          backdrop-filter: blur(4.8px);
+  border: none;
+  color: white;
+  text-align: center;
+  margin-bottom: 5%;
+}
+@media screen and (min-width: 1024px) {
+  body #day #five {
+    width: 30%;
+    margin-top: 5%;
+    margin-right: 16%;
+  }
+}
+body #day #five .name {
+  font-size: 150%;
+}
+body #day #five .tempGen {
+  font-size: 200%;
 }/*# sourceMappingURL=style.css.map */
