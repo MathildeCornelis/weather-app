@@ -15,9 +15,14 @@ async function catchData() {
     function createCarte() {
         let div = document.getElementById('one');
         div.style.display = "block";
+
         let date = document.getElementsByClassName('date')[0];
-        date.textContent = stock.list[0].dt_txt;
-    
+        let dateInitiale = stock.list[0].dt_txt;
+        let split = dateInitiale.split(' ');
+        let splitReverse = split[0].split('-');
+        date.textContent = (splitReverse[2] + "-" + splitReverse[1] + "-" + splitReverse[0]);
+        console.log(split[1]);
+
         let nameCity = document.getElementsByClassName('name')[0];
         nameCity.textContent = stock.city.name;
         
@@ -43,7 +48,11 @@ async function catchData() {
         div.style.display = "block";
 
         let date = document.getElementsByClassName('date')[1];
-        date.textContent = stock.list[8].dt_txt;
+        let dateInitiale = stock.list[8].dt_txt;
+        let split = dateInitiale.split(' ');
+        let splitReverse = split[0].split('-');
+        date.textContent = (splitReverse[2] + "-" + splitReverse[1] + "-" + splitReverse[0]);
+        console.log(split[1]);
     
         let nameCity = document.getElementsByClassName('name')[1];
         nameCity.textContent = stock.city.name;
@@ -70,8 +79,11 @@ async function catchData() {
         div.style.display = "block";
 
         let date = document.getElementsByClassName('date')[2];
-        date.textContent = stock.list[16].dt_txt;
-    
+        let dateInitiale = stock.list[16].dt_txt;
+        let split = dateInitiale.split(' ');
+        let splitReverse = split[0].split('-');
+        date.textContent = (splitReverse[2] + "-" + splitReverse[1] + "-" + splitReverse[0]);
+        console.log(split[1]);    
         let nameCity = document.getElementsByClassName('name')[2];
         nameCity.textContent = stock.city.name;
         
@@ -97,7 +109,11 @@ async function catchData() {
         div.style.display = "block";
 
         let date = document.getElementsByClassName('date')[3];
-        date.textContent = stock.list[24].dt_txt;
+        let dateInitiale = stock.list[24].dt_txt;
+        let split = dateInitiale.split(' ');
+        let splitReverse = split[0].split('-');
+        date.textContent = (splitReverse[2] + "-" + splitReverse[1] + "-" + splitReverse[0]);
+        console.log(split[1]);
     
         let nameCity = document.getElementsByClassName('name')[3];
         nameCity.textContent = stock.city.name;
@@ -124,7 +140,11 @@ async function catchData() {
         div.style.display = "block";
 
         let date = document.getElementsByClassName('date')[4];
-        date.textContent = stock.list[32].dt_txt;
+        let dateInitiale = stock.list[32].dt_txt;
+        let split = dateInitiale.split(' ');
+        let splitReverse = split[0].split('-');
+        date.textContent = (splitReverse[2] + "-" + splitReverse[1] + "-" + splitReverse[0]);
+        console.log(split[1]);
     
         let nameCity = document.getElementsByClassName('name')[4];
         nameCity.textContent = stock.city.name;
@@ -146,6 +166,13 @@ async function catchData() {
     }
     createFifthCarte();
 
+    //recupérer le nom entré 
+    let input = document.getElementById('city');
+    let inputValue = input.value;
+    console.log(inputValue);
+
+    //faire une recherche par rapport au nom
+    let villeInput = (stock.city.name === inputValue)
 
 };
 
