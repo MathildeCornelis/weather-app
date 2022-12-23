@@ -1,11 +1,11 @@
 async function catchData() {
-     //recupérer le nom entré 
-    let input = document.getElementById('city');
-    let inputValue = input.value;
-    console.log(inputValue);
+    //recupérer le nom entré 
+        let input = document.getElementById('city');
+        let inputValue = input.value;
+        console.log(inputValue);
 
-     //faire une recherche par rapport au nom
-    let city = inputValue;
+    //faire une recherche par rapport au nom
+        let city = inputValue;
 
     
     // let tmp = JSON.parse(localStorage.getItem("response"));
@@ -171,6 +171,8 @@ async function catchData() {
         icon.src = "http://openweathermap.org/img/wn/" + stock.list[32].weather[0].icon + "@2x.png";
     }
     createFifthCarte();
+
+    input.value = "";
 };
 
 document.getElementById('submit').addEventListener('keydown', (e) => {
@@ -183,5 +185,13 @@ document.getElementById('submit').addEventListener('keydown', (e) => {
     
 });
 
-document.getElementById('submit').addEventListener('click', function(){catchData()});
+document.getElementById('submit').addEventListener('click', function(e){
+    e.preventDefault();
+    catchData();
+});
+
+document.getElementById('form').addEventListener('submit', function(e){
+    e.preventDefault();
+    catchData();
+});
 
