@@ -60,7 +60,7 @@ body{
         @include desktop{
             display: flex;
             flex-direction: row;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             align-items: flex-start;
             justify-content: space-evenly;
         }
@@ -72,47 +72,63 @@ body{
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(4.8px);
             border: none;
-            color: white;
+            color: rgb(237, 237, 237);
             text-align: center;
+            justify-content: center;
+            align-items: center;
             @include desktop{
                 width:40%;
                 margin-top: 5%;
+                margin-left: 2%;
+                margin-right: 2%;
             }
-            .name{
-                font-size: 150%;
+            #blur{
+                width: 80%;
+                height: 90%;
+                backdrop-filter: blur(10px);
+                background-color: rgba(42, 42, 42, 0.48);
+                border-radius: 10px;
                 @include desktop {
-                    font-size: 300%;
+                    margin-top: 5%;
+                    margin-bottom: 5%;
                 }
-            }
-            .date{
-                @include desktop {
-                    font-size: 350%;
-                }
-            }
-            .tempGen{
-                font-size: 200%;
-                @include desktop {
-                    font-size: 300%;
-                }
-            }
-            .tempMin{
-                @include desktop{ 
+                .name{
                     font-size: 150%;
+                    @include desktop {
+                        font-size: 300%;
+                    }
                 }
-            }
-            .tempMax{
-                @include desktop{ 
-                    font-size: 150%;
+                .date{
+                    @include desktop {
+                        font-size: 350%;
+                    }
                 }
-            }
-            .desc{
-                @include desktop{
-                    font-size: 150%;
+                .tempGen{
+                    font-size: 200%;
+                    @include desktop {
+                        font-size: 300%;
+                    }
                 }
-            }
-            .icon{
-                @include desktop{
-                    width: 40%;
+                .tempMin{
+                    @include desktop{ 
+                        font-size: 150%;
+                    }
+                }
+                .tempMax{
+                    @include desktop{ 
+                        font-size: 150%;
+                    }
+                }
+                .desc{
+                    @include desktop{
+                        font-size: 100%;
+                    }
+                }
+                .icon{
+                    padding-bottom: 10%;
+                    @include desktop{
+                        width: 40%;
+                    }
                 }
             }
         }
@@ -125,47 +141,63 @@ body{
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(4.8px);
             border: none;
-            color: white;
+            color: rgb(237, 237, 237);
             text-align: center;
+            justify-content: center;
+            align-items: center;
             @include desktop{
                 width:40%;
                 margin-top: 5%;
+                margin-left: 2%;
+                margin-right: 2%;
             }
-            .name{
-                font-size: 150%;
+            #blur{
+                width: 80%;
+                height: 90%;
+                backdrop-filter: blur(10px);
+                background-color: rgba(42, 42, 42, 0.48);
+                border-radius: 10px;
                 @include desktop {
-                    font-size: 300%;
+                    margin-top: 5%;
+                    margin-bottom: 5%;
                 }
-            }
-            .date{
-                @include desktop {
-                    font-size: 350%;
-                }
-            }
-            .tempGen{
-                font-size: 200%;
-                @include desktop {
-                    font-size: 300%;
-                }
-            }
-            .tempMin{
-                @include desktop{ 
+                .name{
                     font-size: 150%;
+                    @include desktop {
+                        font-size: 300%;
+                    }
                 }
-            }
-            .tempMax{
-                @include desktop{ 
-                    font-size: 150%;
+                .date{
+                    @include desktop {
+                        font-size: 350%;
+                    }
                 }
-            }
-            .desc{
-                @include desktop{
-                    font-size: 150%;
+                .tempGen{
+                    font-size: 200%;
+                    @include desktop {
+                        font-size: 300%;
+                    }
                 }
-            }
-            .icon{
-                @include desktop{
-                    width: 40%;
+                .tempMin{
+                    @include desktop{ 
+                        font-size: 150%;
+                    }
+                }
+                .tempMax{
+                    @include desktop{ 
+                        font-size: 150%;
+                    }
+                }
+                .desc{
+                    @include desktop{
+                        font-size: 100%;
+                    }
+                }
+                .icon{
+                    padding-bottom: 10%;
+                    @include desktop{
+                        width: 40%;
+                    }
                 }
             }
         }
@@ -178,47 +210,63 @@ body{
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(4.8px);
             border: none;
-            color: white;
+            color: rgb(237, 237, 237);
             text-align: center;
+            justify-content: center;
+            align-items: center;
             @include desktop{
                 width:40%;
                 margin-top: 5%;
+                margin-left: 2%;
+                margin-right: 2%;
             }
-            .name{
-                font-size: 150%;
+            #blur{
+                width: 80%;
+                height: 90%;
+                backdrop-filter: blur(10px);
+                background-color: rgba(42, 42, 42, 0.48);
+                border-radius: 10px;
                 @include desktop {
-                    font-size: 300%;
+                    margin-top: 5%;
+                    margin-bottom: 5%;
                 }
-            }
-            .date{
-                @include desktop {
-                    font-size: 350%;
-                }
-            }
-            .tempGen{
-                font-size: 200%;
-                @include desktop {
-                    font-size: 300%;
-                }
-            }
-            .tempMin{
-                @include desktop{ 
+                .name{
                     font-size: 150%;
+                    @include desktop {
+                        font-size: 300%;
+                    }
                 }
-            }
-            .tempMax{
-                @include desktop{ 
-                    font-size: 150%;
+                .date{
+                    @include desktop {
+                        font-size: 350%;
+                    }
                 }
-            }
-            .desc{
-                @include desktop{
-                    font-size: 150%;
+                .tempGen{
+                    font-size: 200%;
+                    @include desktop {
+                        font-size: 300%;
+                    }
                 }
-            }
-            .icon{
-                @include desktop{
-                    width: 40%;
+                .tempMin{
+                    @include desktop{ 
+                        font-size: 150%;
+                    }
+                }
+                .tempMax{
+                    @include desktop{ 
+                        font-size: 150%;
+                    }
+                }
+                .desc{
+                    @include desktop{
+                        font-size: 100%;
+                    }
+                }
+                .icon{
+                    padding-bottom: 10%;
+                    @include desktop{
+                        width: 40%;
+                    }
                 }
             }
         }
@@ -231,47 +279,63 @@ body{
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(4.8px);
             border: none;
-            color: white;
+            color: rgb(237, 237, 237);
             text-align: center;
+            justify-content: center;
+            align-items: center;
             @include desktop{
                 width:40%;
                 margin-top: 5%;
+                margin-left: 2%;
+                margin-right: 2%;
             }
-            .name{
-                font-size: 150%;
+            #blur{
+                width: 80%;
+                height: 90%;
+                backdrop-filter: blur(10px);
+                background-color: rgba(42, 42, 42, 0.48);
+                border-radius: 10px;
                 @include desktop {
-                    font-size: 300%;
+                    margin-top: 5%;
+                    margin-bottom: 5%;
                 }
-            }
-            .date{
-                @include desktop {
-                    font-size: 350%;
-                }
-            }
-            .tempGen{
-                font-size: 200%;
-                @include desktop {
-                    font-size: 300%;
-                }
-            }
-            .tempMin{
-                @include desktop{ 
+                .name{
                     font-size: 150%;
+                    @include desktop {
+                        font-size: 300%;
+                    }
                 }
-            }
-            .tempMax{
-                @include desktop{ 
-                    font-size: 150%;
+                .date{
+                    @include desktop {
+                        font-size: 350%;
+                    }
                 }
-            }
-            .desc{
-                @include desktop{
-                    font-size: 150%;
+                .tempGen{
+                    font-size: 200%;
+                    @include desktop {
+                        font-size: 300%;
+                    }
                 }
-            }
-            .icon{
-                @include desktop{
-                    width: 40%;
+                .tempMin{
+                    @include desktop{ 
+                        font-size: 150%;
+                    }
+                }
+                .tempMax{
+                    @include desktop{ 
+                        font-size: 150%;
+                    }
+                }
+                .desc{
+                    @include desktop{
+                        font-size: 100%;
+                    }
+                }
+                .icon{
+                    padding-bottom: 10%;
+                    @include desktop{
+                        width: 40%;
+                    }
                 }
             }
         }
@@ -284,48 +348,64 @@ body{
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(4.8px);
             border: none;
-            color: white;
+            color: rgb(237, 237, 237);
             text-align: center;
+            justify-content: center;
+            align-items: center;
             margin-bottom: 5%;
             @include desktop{
                 width:40%;
                 margin-top: 5%;
+                margin-left: 2%;
+                margin-right: 2%;
             }
-            .name{
-                font-size: 150%;
+            #blur{
+                width: 80%;
+                height: 90%;
+                backdrop-filter: blur(10px);
+                background-color: rgba(42, 42, 42, 0.48);
+                border-radius: 10px;
                 @include desktop {
-                    font-size: 300%;
+                    margin-top: 5%;
+                    margin-bottom: 5%;
                 }
-            }
-            .date{
-                @include desktop {
-                    font-size: 350%;
-                }
-            }
-            .tempGen{
-                font-size: 200%;
-                @include desktop {
-                    font-size: 300%;
-                }
-            }
-            .tempMin{
-                @include desktop{ 
+                .name{
                     font-size: 150%;
+                    @include desktop {
+                        font-size: 300%;
+                    }
                 }
-            }
-            .tempMax{
-                @include desktop{ 
-                    font-size: 150%;
+                .date{
+                    @include desktop {
+                        font-size: 350%;
+                    }
                 }
-            }
-            .desc{
-                @include desktop{
-                    font-size: 150%;
+                .tempGen{
+                    font-size: 200%;
+                    @include desktop {
+                        font-size: 300%;
+                    }
                 }
-            }
-            .icon{
-                @include desktop{
-                    width: 40%;
+                .tempMin{
+                    @include desktop{ 
+                        font-size: 150%;
+                    }
+                }
+                .tempMax{
+                    @include desktop{ 
+                        font-size: 150%;
+                    }
+                }
+                .desc{
+                    @include desktop{
+                        font-size: 100%;
+                    }
+                }
+                .icon{
+                    padding-bottom: 10%;
+                    @include desktop{
+                        width: 40%;
+                    }
                 }
             }
         }

@@ -20,7 +20,7 @@ async function catchData() {
     // mettre les infos dan les différents paragraphes
     function createCarte() {
         let div = document.getElementById('one');
-        div.style.display = "block";
+        div.style.display = "flex";
 
         let date = document.getElementsByClassName('date')[0];
         let dateInitiale = stock.list[0].dt_txt;
@@ -51,7 +51,7 @@ async function catchData() {
 
     function createSecondCarte() {
         let div = document.getElementById('two');
-        div.style.display = "block";
+        div.style.display = "flex";
 
         let date = document.getElementsByClassName('date')[1];
         let dateInitiale = stock.list[8].dt_txt;
@@ -82,7 +82,7 @@ async function catchData() {
 
     function createThirdCarte() {
         let div = document.getElementById('three');
-        div.style.display = "block";
+        div.style.display = "flex";
 
         let date = document.getElementsByClassName('date')[2];
         let dateInitiale = stock.list[16].dt_txt;
@@ -112,7 +112,7 @@ async function catchData() {
 
     function createFourthCarte() {
         let div = document.getElementById('four');
-        div.style.display = "block";
+        div.style.display = "flex";
 
         let date = document.getElementsByClassName('date')[3];
         let dateInitiale = stock.list[24].dt_txt;
@@ -143,7 +143,7 @@ async function catchData() {
 
     function createFifthCarte() {
         let div = document.getElementById('five');
-        div.style.display = "block";
+        div.style.display = "flex";
 
         let date = document.getElementsByClassName('date')[4];
         let dateInitiale = stock.list[32].dt_txt;
@@ -215,18 +215,36 @@ async function apiUnsplash() {
     console.log(imageApi);
 
     let div = document.getElementById('one');
-    div.style.background = "url(" + imageApi.results[0].urls.small + ")";
-    div.style.backdropFilter = 'blur(div)'
+    div.style.background = "url(" + imageApi.results[0].urls.regular + ")";
+    div.style.setProperty('background-size', 'cover');
+    div.style.filter = 'grayscale(95%)';
+    div.style.backdropFilter = 'blur(20px)';
 
     let divtwo = document.getElementById('two');
     divtwo.style.background = "url(" + imageApi.results[0].urls.small + ")";
+    divtwo.style.setProperty('background-size', 'cover');
+    divtwo.style.filter = 'grayscale(95%)';
+    divtwo.style.backdropFilter = 'blur(20px)';
+
 
     let divthree = document.getElementById('three');
     divthree.style.background = "url(" + imageApi.results[0].urls.small + ")";
+    divthree.style.setProperty('background-size', 'cover');
+    divthree.style.filter = 'grayscale(95%)';
+    divthree.style.backdropFilter = 'blur(20px)';
+
 
     let divfour = document.getElementById('four');
     divfour.style.background = "url(" + imageApi.results[0].urls.small + ")";
+    divfour.style.setProperty('background-size', 'cover');
+    divfour.style.filter = 'grayscale(95%)';
+    divfour.style.backdropFilter = 'blur(20px)';
+
 
     let divfive = document.getElementById('five');
     divfive.style.background = "url(" + imageApi.results[0].urls.small + ")";
+    divfive.style.setProperty('background-size', 'cover');
+    divfive.style.filter = 'grayscale(95%)';
+    divfive.style.backdropFilter = 'blur(20px)';
+
 }

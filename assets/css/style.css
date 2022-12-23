@@ -68,7 +68,7 @@ body #day {
   body #day {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: flex-start;
     justify-content: space-evenly;
   }
@@ -82,53 +82,74 @@ body #day #one {
   -webkit-backdrop-filter: blur(4.8px);
           backdrop-filter: blur(4.8px);
   border: none;
-  color: white;
+  color: rgb(237, 237, 237);
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (min-width: 1024px) {
   body #day #one {
     width: 40%;
     margin-top: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
   }
 }
-body #day #one .name {
+body #day #one #blur {
+  width: 80%;
+  height: 90%;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background-color: rgba(42, 42, 42, 0.48);
+  border-radius: 10px;
+}
+@media screen and (min-width: 1024px) {
+  body #day #one #blur {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+}
+body #day #one #blur .name {
   font-size: 150%;
 }
 @media screen and (min-width: 1024px) {
-  body #day #one .name {
+  body #day #one #blur .name {
     font-size: 300%;
   }
 }
 @media screen and (min-width: 1024px) {
-  body #day #one .date {
+  body #day #one #blur .date {
     font-size: 350%;
   }
 }
-body #day #one .tempGen {
+body #day #one #blur .tempGen {
   font-size: 200%;
 }
 @media screen and (min-width: 1024px) {
-  body #day #one .tempGen {
+  body #day #one #blur .tempGen {
     font-size: 300%;
   }
 }
 @media screen and (min-width: 1024px) {
-  body #day #one .tempMin {
+  body #day #one #blur .tempMin {
     font-size: 150%;
   }
 }
 @media screen and (min-width: 1024px) {
-  body #day #one .tempMax {
+  body #day #one #blur .tempMax {
     font-size: 150%;
   }
 }
 @media screen and (min-width: 1024px) {
-  body #day #one .desc {
-    font-size: 150%;
+  body #day #one #blur .desc {
+    font-size: 100%;
   }
 }
+body #day #one #blur .icon {
+  padding-bottom: 10%;
+}
 @media screen and (min-width: 1024px) {
-  body #day #one .icon {
+  body #day #one #blur .icon {
     width: 40%;
   }
 }
@@ -142,53 +163,74 @@ body #day #two {
   -webkit-backdrop-filter: blur(4.8px);
           backdrop-filter: blur(4.8px);
   border: none;
-  color: white;
+  color: rgb(237, 237, 237);
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (min-width: 1024px) {
   body #day #two {
     width: 40%;
     margin-top: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
   }
 }
-body #day #two .name {
+body #day #two #blur {
+  width: 80%;
+  height: 90%;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background-color: rgba(42, 42, 42, 0.48);
+  border-radius: 10px;
+}
+@media screen and (min-width: 1024px) {
+  body #day #two #blur {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+}
+body #day #two #blur .name {
   font-size: 150%;
 }
 @media screen and (min-width: 1024px) {
-  body #day #two .name {
+  body #day #two #blur .name {
     font-size: 300%;
   }
 }
 @media screen and (min-width: 1024px) {
-  body #day #two .date {
+  body #day #two #blur .date {
     font-size: 350%;
   }
 }
-body #day #two .tempGen {
+body #day #two #blur .tempGen {
   font-size: 200%;
 }
 @media screen and (min-width: 1024px) {
-  body #day #two .tempGen {
+  body #day #two #blur .tempGen {
     font-size: 300%;
   }
 }
 @media screen and (min-width: 1024px) {
-  body #day #two .tempMin {
+  body #day #two #blur .tempMin {
     font-size: 150%;
   }
 }
 @media screen and (min-width: 1024px) {
-  body #day #two .tempMax {
+  body #day #two #blur .tempMax {
     font-size: 150%;
   }
 }
 @media screen and (min-width: 1024px) {
-  body #day #two .desc {
-    font-size: 150%;
+  body #day #two #blur .desc {
+    font-size: 100%;
   }
 }
+body #day #two #blur .icon {
+  padding-bottom: 10%;
+}
 @media screen and (min-width: 1024px) {
-  body #day #two .icon {
+  body #day #two #blur .icon {
     width: 40%;
   }
 }
@@ -202,53 +244,74 @@ body #day #three {
   -webkit-backdrop-filter: blur(4.8px);
           backdrop-filter: blur(4.8px);
   border: none;
-  color: white;
+  color: rgb(237, 237, 237);
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (min-width: 1024px) {
   body #day #three {
     width: 40%;
     margin-top: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
   }
 }
-body #day #three .name {
+body #day #three #blur {
+  width: 80%;
+  height: 90%;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background-color: rgba(42, 42, 42, 0.48);
+  border-radius: 10px;
+}
+@media screen and (min-width: 1024px) {
+  body #day #three #blur {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+}
+body #day #three #blur .name {
   font-size: 150%;
 }
 @media screen and (min-width: 1024px) {
-  body #day #three .name {
+  body #day #three #blur .name {
     font-size: 300%;
   }
 }
 @media screen and (min-width: 1024px) {
-  body #day #three .date {
+  body #day #three #blur .date {
     font-size: 350%;
   }
 }
-body #day #three .tempGen {
+body #day #three #blur .tempGen {
   font-size: 200%;
 }
 @media screen and (min-width: 1024px) {
-  body #day #three .tempGen {
+  body #day #three #blur .tempGen {
     font-size: 300%;
   }
 }
 @media screen and (min-width: 1024px) {
-  body #day #three .tempMin {
+  body #day #three #blur .tempMin {
     font-size: 150%;
   }
 }
 @media screen and (min-width: 1024px) {
-  body #day #three .tempMax {
+  body #day #three #blur .tempMax {
     font-size: 150%;
   }
 }
 @media screen and (min-width: 1024px) {
-  body #day #three .desc {
-    font-size: 150%;
+  body #day #three #blur .desc {
+    font-size: 100%;
   }
 }
+body #day #three #blur .icon {
+  padding-bottom: 10%;
+}
 @media screen and (min-width: 1024px) {
-  body #day #three .icon {
+  body #day #three #blur .icon {
     width: 40%;
   }
 }
@@ -262,53 +325,74 @@ body #day #four {
   -webkit-backdrop-filter: blur(4.8px);
           backdrop-filter: blur(4.8px);
   border: none;
-  color: white;
+  color: rgb(237, 237, 237);
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (min-width: 1024px) {
   body #day #four {
     width: 40%;
     margin-top: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
   }
 }
-body #day #four .name {
+body #day #four #blur {
+  width: 80%;
+  height: 90%;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background-color: rgba(42, 42, 42, 0.48);
+  border-radius: 10px;
+}
+@media screen and (min-width: 1024px) {
+  body #day #four #blur {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+}
+body #day #four #blur .name {
   font-size: 150%;
 }
 @media screen and (min-width: 1024px) {
-  body #day #four .name {
+  body #day #four #blur .name {
     font-size: 300%;
   }
 }
 @media screen and (min-width: 1024px) {
-  body #day #four .date {
+  body #day #four #blur .date {
     font-size: 350%;
   }
 }
-body #day #four .tempGen {
+body #day #four #blur .tempGen {
   font-size: 200%;
 }
 @media screen and (min-width: 1024px) {
-  body #day #four .tempGen {
+  body #day #four #blur .tempGen {
     font-size: 300%;
   }
 }
 @media screen and (min-width: 1024px) {
-  body #day #four .tempMin {
+  body #day #four #blur .tempMin {
     font-size: 150%;
   }
 }
 @media screen and (min-width: 1024px) {
-  body #day #four .tempMax {
+  body #day #four #blur .tempMax {
     font-size: 150%;
   }
 }
 @media screen and (min-width: 1024px) {
-  body #day #four .desc {
-    font-size: 150%;
+  body #day #four #blur .desc {
+    font-size: 100%;
   }
 }
+body #day #four #blur .icon {
+  padding-bottom: 10%;
+}
 @media screen and (min-width: 1024px) {
-  body #day #four .icon {
+  body #day #four #blur .icon {
     width: 40%;
   }
 }
@@ -322,54 +406,75 @@ body #day #five {
   -webkit-backdrop-filter: blur(4.8px);
           backdrop-filter: blur(4.8px);
   border: none;
-  color: white;
+  color: rgb(237, 237, 237);
   text-align: center;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 5%;
 }
 @media screen and (min-width: 1024px) {
   body #day #five {
     width: 40%;
     margin-top: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
   }
 }
-body #day #five .name {
+body #day #five #blur {
+  width: 80%;
+  height: 90%;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background-color: rgba(42, 42, 42, 0.48);
+  border-radius: 10px;
+}
+@media screen and (min-width: 1024px) {
+  body #day #five #blur {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+}
+body #day #five #blur .name {
   font-size: 150%;
 }
 @media screen and (min-width: 1024px) {
-  body #day #five .name {
+  body #day #five #blur .name {
     font-size: 300%;
   }
 }
 @media screen and (min-width: 1024px) {
-  body #day #five .date {
+  body #day #five #blur .date {
     font-size: 350%;
   }
 }
-body #day #five .tempGen {
+body #day #five #blur .tempGen {
   font-size: 200%;
 }
 @media screen and (min-width: 1024px) {
-  body #day #five .tempGen {
+  body #day #five #blur .tempGen {
     font-size: 300%;
   }
 }
 @media screen and (min-width: 1024px) {
-  body #day #five .tempMin {
+  body #day #five #blur .tempMin {
     font-size: 150%;
   }
 }
 @media screen and (min-width: 1024px) {
-  body #day #five .tempMax {
+  body #day #five #blur .tempMax {
     font-size: 150%;
   }
 }
 @media screen and (min-width: 1024px) {
-  body #day #five .desc {
-    font-size: 150%;
+  body #day #five #blur .desc {
+    font-size: 100%;
   }
 }
+body #day #five #blur .icon {
+  padding-bottom: 10%;
+}
 @media screen and (min-width: 1024px) {
-  body #day #five .icon {
+  body #day #five #blur .icon {
     width: 40%;
   }
 }/*# sourceMappingURL=style.css.map */
