@@ -16,7 +16,7 @@ async function catchData() {
     // let stock = tmp;
     console.log(stock);
     localStorage.setItem('response', JSON.stringify(stock));
-    
+
     // mettre les infos dan les différents paragraphes
     function createCarte() {
         let div = document.getElementById('one');
@@ -188,10 +188,45 @@ document.getElementById('submit').addEventListener('keydown', (e) => {
 document.getElementById('submit').addEventListener('click', function(e){
     e.preventDefault();
     catchData();
+    apiUnsplash();
 });
 
 document.getElementById('form').addEventListener('submit', function(e){
     e.preventDefault();
     catchData();
+    apiUnsplash();
 });
 
+async function apiUnsplash() {
+    
+    //recupérer le nom entré 
+        let input = document.getElementById('city');
+        let inputValue = input.value;
+        console.log(inputValue);
+
+    //faire une recherche par rapport au nom
+        let city = inputValue;
+
+    const apiUn = await fetch(
+        `https://api.unsplash.com/search/photos?&query=${city}&client_id=BW9ijLFPRcur2ewSoY00MOiI-vD3aKgyzVc0MTJlnoQ&orientation=portrait`
+    );
+    let imageApi = await apiUn.json();
+    localStorage.setItem('apiUn', JSON.stringify(imageApi));
+    console.log(imageApi);
+
+    let div = document.getElementById('one');
+    div.style.background = "url(" + imageApi.results[0].urls.small + ")";
+    div.style.backdropFilter = 'blur(div)'
+
+    let divtwo = document.getElementById('two');
+    divtwo.style.background = "url(" + imageApi.results[0].urls.small + ")";
+
+    let divthree = document.getElementById('three');
+    divthree.style.background = "url(" + imageApi.results[0].urls.small + ")";
+
+    let divfour = document.getElementById('four');
+    divfour.style.background = "url(" + imageApi.results[0].urls.small + ")";
+
+    let divfive = document.getElementById('five');
+    divfive.style.background = "url(" + imageApi.results[0].urls.small + ")";
+}
