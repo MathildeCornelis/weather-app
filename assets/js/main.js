@@ -1,4 +1,3 @@
-import { key_wheater, key_unsplash } from './config.js'
 async function catchData() {
     //recupérer le nom entré 
         let input = document.getElementById('city');
@@ -11,7 +10,7 @@ async function catchData() {
     
     // let tmp = JSON.parse(localStorage.getItem("response"));
     const response = await fetch(
-        `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${key_wheater}&units=metric&lang=fr`
+        `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=4e29ee50eda3d88e1433f23cf8536aa4&units=metric&lang=fr`
     );
     let stock = await response.json();
     // let stock = tmp;
@@ -209,7 +208,7 @@ async function apiUnsplash() {
         let city = inputValue;
 
     const apiUn = await fetch(
-        `https://api.unsplash.com/search/photos?&query=${city}&client_id=${key_unsplash}&orientation=portrait`
+        `https://api.unsplash.com/search/photos?&query=${city}&client_id=BW9ijLFPRcur2ewSoY00MOiI-vD3aKgyzVc0MTJlnoQ&orientation=portrait`
     );
     let imageApi = await apiUn.json();
     localStorage.setItem('apiUn', JSON.stringify(imageApi));
